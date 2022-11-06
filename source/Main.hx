@@ -10,6 +10,7 @@ import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
 import openfl.display.StageScaleMode;
+import lime.system.System;
 
 class Main extends Sprite
 {
@@ -22,6 +23,8 @@ class Main extends Sprite
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 	public static var fpsVar:FPS;
 
+	public static var path:String = System.applicationStorageDirectory;
+	
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
 	public static function main():Void
